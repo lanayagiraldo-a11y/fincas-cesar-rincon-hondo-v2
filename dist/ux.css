@@ -1,0 +1,116 @@
+/* Maqueta UX 2026-09-16. Solo presentación e interacción; no cambia datos ni textos aprobados. */
+
+/* 1. Legibilidad: mínimo 13 px en textos secundarios */
+.eyebrow{font-size:12px}
+.property-folio,.section-note,.photo-source,.water-copy .water-footnote,.disclaimer,.sources,.water-photo figcaption,.map-caption p,.dialog-caption,.footer-inner p,.hero-photo-credit{font-size:13px!important}
+.scenario-label,.map-group-label,.map-choice small,.scenario-grid article>p:last-child,.opportunity-grid p,.context-grid p,.metric .txt,.detail-content .note{font-size:13px}
+.scenario-grid article>p:last-child{font-size:13px}
+.map-sheet-footer{font-size:13px}
+.map-choice span{font-size:14px}
+sup a{font-size:11px}
+
+/* 2. Cabecera compacta al desplazarse y barra de avance */
+.site-header{transition:box-shadow .25s}
+.brand-row{transition:min-height .25s}
+.site-header.is-compact .brand-row{min-height:56px}
+.site-header.is-compact .brand{font-size:19px}
+.site-header.is-compact .brand small{display:none}
+.site-header.is-compact .brand-monogram{width:32px;height:32px;font-size:17px}
+.site-header.is-compact{box-shadow:0 8px 24px #0b2e2540}
+.scroll-progress{position:absolute;left:0;right:0;bottom:-3px;height:3px;background:transparent;pointer-events:none}
+.scroll-progress span{display:block;height:100%;width:0;background:var(--gold);transition:width .1s linear}
+
+/* 3. Volver arriba flotante */
+.back-top{position:fixed;right:22px;bottom:22px;z-index:25;width:48px;height:48px;border-radius:50%;background:var(--deep);color:#fff;border:1px solid #ffffff40;box-shadow:0 8px 20px #0b2e2555;opacity:0;transform:translateY(12px);transition:opacity .25s,transform .25s}
+.back-top:hover{background:var(--forest)}
+.back-top.is-visible{opacity:1;transform:none}
+.back-top[hidden]{display:none}
+
+/* 4. Fichas de predios: pista visual en la miniatura y aterrizaje en el mapa */
+.property-plan{border:1px solid transparent;border-radius:4px;transition:border-color .2s,background .2s;background:#fafbf9}
+.property-plan img{transition:transform .25s}
+.property-plan:hover,.property-plan:focus-visible{border-color:#9fb8a6;background:#f1f5f1}
+.property-plan:hover img{transform:scale(1.05)}
+.map-workspace{transition:box-shadow .3s,border-color .3s}
+.map-workspace.is-flash{box-shadow:0 0 0 4px #d5bc8180;border-color:var(--gold)}
+.map-workspace:focus{outline:none}
+
+/* 5. Visor: paginación, etiquetas y selector según tamaño */
+.map-actions{align-items:center;gap:10px;flex-wrap:wrap;justify-content:flex-end}
+.map-pager{display:inline-flex;align-items:center;gap:4px;margin-right:6px;padding-right:12px;border-right:1px solid var(--line)}
+.map-pager span{min-width:58px;text-align:center;font-size:13px;font-variant-numeric:tabular-nums;color:var(--forest)}
+.icon-button.labelled{width:auto;padding:0 14px 0 10px;gap:8px;font-size:13px;font-weight:600;color:var(--forest)}
+.icon-button.labelled span{white-space:nowrap}
+.map-current{margin:0;font-family:var(--serif);font-size:20px;line-height:1.2;color:var(--forest);display:none}
+@media screen and (min-width:1101px){
+  .map-select-wrap select{display:none}
+  .map-current{display:block}
+  .map-choice{transition:background .15s}
+}
+@media screen and (max-width:600px){
+  .map-actions{justify-content:space-between;gap:10px}
+  .map-pager{margin:0;padding:0;border:0;flex-basis:100%;justify-content:space-between}
+  .map-pager span{flex:1;font-size:14px}
+  .icon-button.labelled{flex:1;justify-content:center;padding:0 10px;font-size:13px}
+}
+@media screen and (max-width:360px){
+  .icon-button.labelled span{display:none}
+  .icon-button.labelled{padding:0}
+}
+
+/* 6. Tablas: sombra de desplazamiento y primera columna fija */
+.table-wrap{position:relative;background:
+  linear-gradient(90deg,#fff 30%,rgba(255,255,255,0)) left/40px 100% no-repeat,
+  linear-gradient(270deg,#fff 30%,rgba(255,255,255,0)) right/40px 100% no-repeat,
+  linear-gradient(90deg,rgba(0,0,0,.14),rgba(0,0,0,0)) left/14px 100% no-repeat,
+  linear-gradient(270deg,rgba(0,0,0,.14),rgba(0,0,0,0)) right/14px 100% no-repeat;
+  background-attachment:local,local,scroll,scroll}
+.table-wrap td:first-child,.table-wrap th:first-child{position:sticky;left:0;background:#fff;z-index:1;box-shadow:1px 0 0 var(--line)}
+.table-wrap th:first-child{background:var(--forest)}
+.table-wrap tr[style] td:first-child{background:#f6f1e6}
+
+/* 7. Desplegables anidados con el mismo lenguaje visual */
+.detail-content details>summary{list-style:none;display:flex;align-items:center;justify-content:space-between;gap:16px;border-top:1px solid var(--line);font-size:14px}
+.detail-content details>summary::after{content:"+";font-family:var(--sans);font-size:20px;line-height:1;color:var(--forest);transition:transform .2s}
+.detail-content details[open]>summary::after{transform:rotate(45deg)}
+.disclosure>summary>svg{transition:transform .2s}
+.disclosure>summary:hover{color:var(--forest)}
+
+/* 8. Notas al pie: vista previa y regreso */
+.cite-pop{position:absolute;z-index:40;max-width:340px;background:var(--deep);color:#eef4ee;font-size:13px;line-height:1.55;padding:12px 14px;border-radius:5px;box-shadow:0 12px 28px #0b2e2555;pointer-events:none}
+.cite-pop[hidden]{display:none}
+.cite-pop b{display:block;color:var(--gold);font-size:11px;text-transform:uppercase;margin-bottom:4px}
+.cite-return{position:fixed;left:50%;bottom:22px;transform:translate(-50%,16px);z-index:26;display:inline-flex;align-items:center;gap:8px;background:var(--forest);color:#fff;border:1px solid #ffffff40;border-radius:999px;padding:10px 18px;font-size:13px;font-weight:600;box-shadow:0 8px 20px #0b2e2555;opacity:0;transition:opacity .25s,transform .25s}
+.cite-return.is-visible{opacity:1;transform:translate(-50%,0)}
+.cite-return[hidden]{display:none}
+.sources li:target,.sources li.is-cited{background:#fbf6ea;outline:2px solid var(--gold);outline-offset:6px;border-radius:2px}
+
+/* 9. Visor ampliado: gestos */
+.dialog-viewport{touch-action:none}
+.dialog-viewport.zoomed{cursor:grab}
+@media screen and (max-width:600px) and (orientation:portrait){
+  .dialog-viewport{align-items:flex-start}
+}
+@media(prefers-reduced-motion:reduce){.property-plan img,.back-top,.cite-return,.brand-row{transition:none}}
+
+/* 10. Fotos entregadas por Liliana el 2026-09-16: ya vienen corregidas, sin filtros CSS */
+.photo-pair img,.water-photo img{filter:none}
+.water-photo img{transform:none;object-position:50% 45%}
+.photo-pair figure:first-child img{object-position:50% 60%}
+.photo-pair figure:last-child img{object-position:50% 55%}
+
+/* 11. Sin desplegables: toda la información visible. Los títulos de cada bloque pasan a ser encabezados fijos. */
+.disclosure,.detail-content details{border:0;margin-top:0}
+.disclosure>summary,.detail-content details>summary{pointer-events:none;cursor:default;list-style:none;font-family:var(--serif);font-weight:400;font-size:26px;line-height:1.2;color:var(--forest);padding:34px 0 10px;border-top:1px solid var(--line);margin-top:26px;min-height:0}
+.disclosure>summary>svg,.detail-content details>summary::after{display:none;content:none}
+.references-section .src-details>summary{display:flex;justify-content:space-between;align-items:center;gap:24px;cursor:pointer;font-size:15px;padding:19px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);min-height:56px}
+.references-section .src-details>summary svg{width:21px;height:21px;transition:transform .2s}
+.references-section .src-details[open]>summary svg{transform:rotate(45deg)}
+.references-section .src-details>summary:hover{color:var(--forest)}
+.detail-content details>summary{font-size:22px;padding:22px 0 8px;margin-top:8px}
+.detail-content{padding:4px 0 8px}
+.section-note+.disclosure>summary{margin-top:18px}
+@media screen and (max-width:600px){
+  .disclosure>summary{font-size:23px;padding:26px 0 8px}
+  .detail-content details>summary{font-size:20px}
+}

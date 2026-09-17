@@ -1,0 +1,90 @@
+[
+  {
+    "id": "tigre-coberturas",
+    "name": "El Tigre",
+    "title": "Mapa de coberturas",
+    "detail": "1.219,18 ha · base topográfica",
+    "src": "assets/atlas/tigre-coberturas.svg",
+    "thumb": "assets/atlas/tigre-coberturas-thumb.png",
+    "group": "Coberturas",
+    "editorialDownload": "assets/atlas/tigre-coberturas.png",
+    "view": "assets/atlas/tigre-coberturas.svg"
+  },
+  {
+    "id": "silencio-coberturas",
+    "name": "El Silencio",
+    "title": "Mapa de coberturas",
+    "detail": "348,70 ha · base de coberturas",
+    "src": "assets/atlas/silencio-coberturas.svg",
+    "thumb": "assets/atlas/silencio-coberturas-thumb.png",
+    "group": "Coberturas",
+    "editorialDownload": "assets/atlas/silencio-coberturas.png",
+    "view": "assets/atlas/silencio-coberturas.png"
+  },
+  {
+    "id": "tigre-predial",
+    "name": "El Tigre",
+    "title": "Plano catastral de 2024",
+    "detail": "981 ha + 3.548 m² · plano catastral",
+    "src": "assets/atlas/tigre-predial.svg",
+    "thumb": "assets/atlas/tigre-predial-thumb.png",
+    "group": "Planos prediales",
+    "editorialDownload": "assets/atlas/tigre-predial.png",
+    "view": "assets/atlas/tigre-predial.png"
+  },
+  {
+    "id": "silencio-predial",
+    "name": "El Silencio",
+    "title": "Plano predial",
+    "detail": "Plano de linderos del archivo documental",
+    "src": "assets/atlas/silencio-predial.svg",
+    "thumb": "assets/atlas/silencio-predial-thumb.png",
+    "group": "Planos prediales",
+    "editorialDownload": "assets/atlas/silencio-predial.png",
+    "view": "assets/atlas/silencio-predial.png"
+  },
+  {
+    "id": "esperanza-predial",
+    "name": "La Esperanza",
+    "title": "Plano predial",
+    "detail": "Plano de linderos del archivo documental",
+    "src": "assets/atlas/esperanza-predial.svg",
+    "thumb": "assets/atlas/esperanza-predial-thumb.png",
+    "group": "Planos prediales",
+    "editorialDownload": "assets/atlas/esperanza-predial.png",
+    "view": "assets/atlas/esperanza-predial.svg"
+  },
+  {
+    "id": "mundo-ancho-predial",
+    "name": "El Porvenir / Mundo Ancho",
+    "title": "Plano predial",
+    "detail": "Denominación Mundo Ancho en el plano",
+    "src": "assets/atlas/mundo-ancho-predial.svg",
+    "thumb": "assets/atlas/mundo-ancho-predial-thumb.png",
+    "group": "Planos prediales",
+    "editorialDownload": "assets/atlas/mundo-ancho-predial.png",
+    "view": "assets/atlas/mundo-ancho-predial.svg"
+  },
+  {
+    "id": "ubicacion-regional",
+    "name": "Cesar y Chiriguaná",
+    "title": "Ubicación general",
+    "detail": "Imagen de ubicación del documento de las haciendas · archivo 2013",
+    "src": "assets/atlas/ubicacion-regional.svg",
+    "thumb": "assets/atlas/ubicacion-regional-thumb.png",
+    "group": "Ubicación",
+    "editorialDownload": "assets/atlas/ubicacion-regional.png",
+    "view": "assets/atlas/ubicacion-regional.svg"
+  },
+  {
+    "id": "ubicacion-local",
+    "name": "Rincón Hondo y entorno",
+    "title": "Ubicación general",
+    "detail": "Imagen de ubicación del documento de las haciendas · archivo 2013",
+    "src": "assets/atlas/ubicacion-local.svg",
+    "thumb": "assets/atlas/ubicacion-local-thumb.png",
+    "group": "Ubicación",
+    "editorialDownload": "assets/atlas/ubicacion-local.png",
+    "view": "assets/atlas/ubicacion-local.svg"
+  }
+]
